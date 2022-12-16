@@ -1,2 +1,2 @@
 # yu-kotlin
-JAGO yu-kotlin
+yu-kotlin
