@@ -27,7 +27,7 @@ fun KOT_01_frame() {
 
     val frame = JFrame()
     
-	    frame.setTitle("     " + title)
+	frame.setTitle("     " + title)
 	    
         frame.setBounds(10+0*40+150, 10+0*40, 1000, 600)
         
@@ -37,7 +37,7 @@ fun KOT_01_frame() {
         
 //------------------------------
 	
-	    frame.isVisible = true
+	frame.isVisible = true
 	    
 //------------------------------
 	    
