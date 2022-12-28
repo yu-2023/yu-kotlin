@@ -39,7 +39,7 @@ fun KOT_02_text() {
         
         frame.setIconImage(icon_frame.getImage())
         
-	    frame.isVisible = true
+	frame.isVisible = true
 
 //------------------------------
 
