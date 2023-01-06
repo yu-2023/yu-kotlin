@@ -28,7 +28,7 @@ fun KOT_01_frame() {  //  KOT_01_frame demonstrates Kotlin Frame
 
     val frame = JFrame()
     
-	    frame.setTitle("     " + title)
+	frame.setTitle("     " + title)
 	    
         frame.setBounds(10+0*40+150, 10+0*40, 1000, 600)
         
@@ -36,7 +36,7 @@ fun KOT_01_frame() {  //  KOT_01_frame demonstrates Kotlin Frame
         
         frame.setIconImage(icon_frame.getImage())
 	
-	    frame.isVisible = true
+	frame.isVisible = true
 	    
 //------------------------------
 	    
