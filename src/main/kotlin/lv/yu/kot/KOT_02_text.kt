@@ -5,7 +5,7 @@
  * 
  * Kotlin program     KOT_02_text.kt     Apache License 2.0
  *      
- * Copyright (c)    Yuri Utkin 2023     mob.+371 12345678     https://www.jago.lv
+ * Copyright (c)      Yuri Utkin 2023    mob.+371 12345678     https://www.jago.lv
  * 
  */
 package lv.yu.kot
@@ -20,7 +20,7 @@ import java.awt.EventQueue
 
 //------------------------------
 
-fun KOT_02_text() {
+fun KOT_02_text() {  //  KOT_02_text demonstrates Kotlin TextArea in Kotlin Frame
 	
     var imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
     var icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
@@ -39,7 +39,7 @@ fun KOT_02_text() {
         
         frame.setIconImage(icon_frame.getImage())
         
-	frame.isVisible = true
+	    frame.isVisible = true
 
 //------------------------------
 
