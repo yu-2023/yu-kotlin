@@ -64,7 +64,7 @@ fun KOT_03_menu() {
         
 //------------------------------
         
-	val menubar = JMenuBar()
+    val menubar = JMenuBar()
 
     val menu_Menu = JMenu("Menu")
       val item_Start = JMenuItem("Start", icon_Start)
@@ -93,7 +93,7 @@ fun KOT_03_menu() {
       val item_Rus = JCheckBoxMenuItem("Rus", icon_Rus)
 	  val item_Lat = JCheckBoxMenuItem("Lat", icon_Lat)
 	  
-	val menu_Exit = JMenu("Exit")
+    val menu_Exit = JMenu("Exit")
       val item_Exit = JMenuItem("Exit", icon_Exit)
 		      
 //------------------------------	      
@@ -162,14 +162,14 @@ fun KOT_03_menu() {
         menu_Lang.add(item_Rus)
         menu_Lang.add(item_Lat)
         
-	    menu_Exit.add(item_Exit)
+	menu_Exit.add(item_Exit)
             
         menubar.add(menu_Menu)
-	    menubar.add(menu_Start1)
-		menubar.add(menu_Start2)
-		menubar.add(menu_Start3)
-		menubar.add(menu_Help)
-		menubar.add(menu_Lang)
+	menubar.add(menu_Start1)
+	menubar.add(menu_Start2)
+	menubar.add(menu_Start3)
+	menubar.add(menu_Help)
+	menubar.add(menu_Lang)
         menubar.add(menu_Exit)
         
         frame.jMenuBar = menubar
