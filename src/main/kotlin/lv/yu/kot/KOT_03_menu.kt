@@ -222,7 +222,7 @@ fun KOT_03_menu() {
 //------------------------------
 
 fun main() {
-	         EventQueue.invokeLater(::KOT_03_menu)
+             EventQueue.invokeLater(::KOT_03_menu)
 }
 
 //------------------------------
