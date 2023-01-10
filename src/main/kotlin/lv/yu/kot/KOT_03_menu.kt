@@ -68,30 +68,30 @@ fun KOT_03_menu() {
 
     val menu_Menu = JMenu("Menu")
       val item_Start = JMenuItem("Start", icon_Start)
-	  val item_Load  = JMenuItem("Loads", icon_Load)        
-	  val item_Xxxxx = JMenuItem("Xxxxx", icon_Xxxxx)
+      val item_Load  = JMenuItem("Loads", icon_Load)        
+      val item_Xxxxx = JMenuItem("Xxxxx", icon_Xxxxx)
 	  
     val menu_Start1 = JMenu("Start1")  
       val item_St11 = JMenuItem("St11")
-	  val item_St12 = JMenuItem("St12")
+      val item_St12 = JMenuItem("St12")
 	  
     val menu_Start2 = JMenu("Start2")
       val item_St21 = JMenuItem("St21")
-	  val item_St22 = JMenuItem("St22")
+      val item_St22 = JMenuItem("St22")
 	  
     val menu_Start3 = JMenu("Start3")   
       val item_St31 = JMenuItem("St31")
-	  val item_St32 = JMenuItem("St32")
+      val item_St32 = JMenuItem("St32")
 	  
     val menu_Help = JMenu("Help") 
       val item_Information = JMenuItem("Information", icon_Information)
-	  val item_Help        = JMenuItem("Help", icon_Help)
-	  val item_About       = JMenuItem("About", icon_About)
+      val item_Help        = JMenuItem("Help", icon_Help)
+      val item_About       = JMenuItem("About", icon_About)
 	  
     val menu_Lang = JMenu("Lang")    
-	  val item_Eng = JCheckBoxMenuItem("Eng", icon_Eng)
+      val item_Eng = JCheckBoxMenuItem("Eng", icon_Eng)
       val item_Rus = JCheckBoxMenuItem("Rus", icon_Rus)
-	  val item_Lat = JCheckBoxMenuItem("Lat", icon_Lat)
+      val item_Lat = JCheckBoxMenuItem("Lat", icon_Lat)
 	  
     val menu_Exit = JMenu("Exit")
       val item_Exit = JMenuItem("Exit", icon_Exit)
