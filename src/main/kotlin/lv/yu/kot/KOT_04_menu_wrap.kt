@@ -162,14 +162,14 @@ fun KOT_04_menu_wrap() {
         menu_Lang.add(item_Rus)
         menu_Lang.add(item_Lat)
     	        
-	    menu_Exit.add(item_Exit)
+        menu_Exit.add(item_Exit)
     	            
         menubar.add(menu_Menu)
-	    menubar.add(menu_Start1)
-		menubar.add(menu_Start2)
-		menubar.add(menu_Start3)
-		menubar.add(menu_Help)
-		menubar.add(menu_Lang)
+        menubar.add(menu_Start1)
+	menubar.add(menu_Start2)
+	menubar.add(menu_Start3)
+	menubar.add(menu_Help)
+	menubar.add(menu_Lang)
         menubar.add(menu_Exit)
         
     	menubar.setLayout( JAV_LIB_wrap_layout (JAV_LIB_wrap_layout.LEFT, 0, 0) )
