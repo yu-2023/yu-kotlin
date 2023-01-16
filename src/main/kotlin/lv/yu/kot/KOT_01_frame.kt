@@ -13,6 +13,7 @@ package lv.yu.kot
 import javax.swing.JFrame
 import javax.swing.ImageIcon
 
+import java.awt.BorderLayout
 import java.awt.EventQueue
 
 //------------------------------
@@ -28,15 +29,17 @@ fun KOT_01_frame() {  //  KOT_01_frame demonstrates Kotlin Frame
 
     val frame = JFrame()
     
-	frame.setTitle("     " + title)
+        frame.setTitle("     " + title)
 	    
         frame.setBounds(10+0*40+150, 10+0*40, 1000, 600)
         
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
         
         frame.setIconImage(icon_frame.getImage())
+        
+        frame.setLayout(BorderLayout())
 	
-	frame.isVisible = true
+        frame.isVisible = true
 	    
 //------------------------------
 	    

@@ -39,7 +39,9 @@ fun KOT_02_text() {  //  KOT_02_text demonstrates Kotlin TextArea in Kotlin Fram
         
         frame.setIconImage(icon_frame.getImage())
         
-	frame.isVisible = true
+        frame.setLayout(BorderLayout())
+        
+        frame.isVisible = true
 
 //------------------------------
 

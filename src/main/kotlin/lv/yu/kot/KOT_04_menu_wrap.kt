@@ -33,7 +33,7 @@ fun KOT_04_menu_wrap() {
     var imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
     var icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
 
-//------------------------------	
+//------------------------------
 
     var title = "KOTLIN -- KOT_04_menu_wrap -- v. 2023.01.01"
 
@@ -46,6 +46,8 @@ fun KOT_04_menu_wrap() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
         
         frame.setIconImage(icon_frame.getImage())
+        
+        frame.setLayout(BorderLayout())
         
         frame.isVisible = true
 
@@ -166,10 +168,10 @@ fun KOT_04_menu_wrap() {
     	            
         menubar.add(menu_Menu)
         menubar.add(menu_Start1)
-	menubar.add(menu_Start2)
-	menubar.add(menu_Start3)
-	menubar.add(menu_Help)
-	menubar.add(menu_Lang)
+        menubar.add(menu_Start2)
+        menubar.add(menu_Start3)
+        menubar.add(menu_Help)
+        menubar.add(menu_Lang)
         menubar.add(menu_Exit)
         
     	menubar.setLayout( JAV_LIB_wrap_layout (JAV_LIB_wrap_layout.LEFT, 0, 0) )
@@ -224,7 +226,7 @@ fun KOT_04_menu_wrap() {
 //------------------------------
 
 fun main() {
-	         EventQueue.invokeLater(::KOT_04_menu_wrap)
-}
+	              EventQueue.invokeLater(::KOT_04_menu_wrap)
+}  //  end main()
 
 //------------------------------
