@@ -213,9 +213,9 @@ fun KOT_03_menu() {
 "        \r\n" +
         		         "")
 
-	    frame.getContentPane().add(scrollpane, BorderLayout.CENTER)
+        frame.getContentPane().add(scrollpane, BorderLayout.CENTER)
 
-	    frame.isVisible = true
+        frame.isVisible = true
 
 //------------------------------
 	    
@@ -224,7 +224,7 @@ fun KOT_03_menu() {
 //------------------------------
 
 fun main() {
-	              EventQueue.invokeLater(::KOT_03_menu)
+                  EventQueue.invokeLater(::KOT_03_menu)
 }  //  end main()
 
 //------------------------------
