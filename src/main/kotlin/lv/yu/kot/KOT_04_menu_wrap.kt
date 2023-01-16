@@ -215,9 +215,9 @@ fun KOT_04_menu_wrap() {
 "        \r\n" +
         		         "")
 
-	    frame.getContentPane().add(scrollpane, BorderLayout.CENTER)
+        frame.getContentPane().add(scrollpane, BorderLayout.CENTER)
 
-	    frame.isVisible = true
+        frame.isVisible = true
 
 //------------------------------
 	    
@@ -226,7 +226,7 @@ fun KOT_04_menu_wrap() {
 //------------------------------
 
 fun main() {
-	              EventQueue.invokeLater(::KOT_04_menu_wrap)
+                  EventQueue.invokeLater(::KOT_04_menu_wrap)
 }  //  end main()
 
 //------------------------------
