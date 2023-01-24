@@ -15,7 +15,7 @@ import javax.swing.JMenu
 
 import java.awt.event.KeyEvent
 
-	public var menu_Menu = JMenu()
+    public var menu_Menu = JMenu()
 
 fun KOT_start_menu_08() {
 
