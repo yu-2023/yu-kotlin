@@ -19,16 +19,16 @@ import java.awt.event.KeyEvent;
 
 fun KOT_start_menu_start_1_08() {
 
-        var menu_Start_1 = JMenu("Start1")
+        val menu_Start_1 = JMenu("Start1")
             menu_Start_1.mnemonic = KeyEvent.VK_1  //  ALT 1
             menu_Start_1.toolTipText = "Start1 commands"    
             
-        var item_St11 = JMenuItem("St11")
+        val item_St11 = JMenuItem("St11")
             item_St11.toolTipText = "St11 application"
             item_St11.addActionListener { e: ActionEvent -> System.out.println("Selected menu: " + e.getActionCommand()) }
             menu_Start_1.add(item_St11)
 
-        var item_St12 = JMenuItem("St12")
+        val item_St12 = JMenuItem("St12")
             item_St12.toolTipText = "St12 application"
             item_St12.addActionListener { e: ActionEvent -> System.out.println("Selected menu: " + e.getActionCommand()) }
             menu_Start_1.add(item_St12)
