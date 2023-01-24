@@ -20,15 +20,15 @@ import javax.swing.*
            
 fun KOT_start_12_08() { 
          
-	    JTabbedPane_start_12 = JTabbedPane()
-    	JTabbedPane_start_12.removeAll()
+        JTabbedPane_start_12 = JTabbedPane()
+        JTabbedPane_start_12.removeAll()
 
         JTabbedPane_start_12.setTabPlacement(SwingConstants.BOTTOM)
         JTabbedPane_start_12.setTabLayoutPolicy(1)
         
         JInternalFrame_start_08_12 = JInternalFrame("12 START START START", true, false, true, true)
-    	JInternalFrame_start_08_12.setLayout(BorderLayout())
-    	JInternalFrame_start_08_12.setBackground(Color.GRAY)
+        JInternalFrame_start_08_12.setLayout(BorderLayout())
+        JInternalFrame_start_08_12.setBackground(Color.GRAY)
         JInternalFrame_start_08_12.isVisible = true
         
         JInternalFrame_start_08_12.add(JTabbedPane_start_12, BorderLayout.CENTER)
