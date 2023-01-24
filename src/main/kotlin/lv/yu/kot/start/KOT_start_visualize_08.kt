@@ -80,6 +80,6 @@ fun KOT_start_visualize_08() {
 
 //--------------------------------------------------          
 			            		
-		lv.yu.kot.frame_08.isVisible = true 
+        lv.yu.kot.frame_08.isVisible = true 
 
 }  //  end KOT_start_visualize_08()
