@@ -10,29 +10,29 @@
  */
 package lv.yu.kot.start.start_21
 
-import java.awt.*
-import java.awt.event.KeyEvent
+import java.awt.Color
+import java.awt.BorderLayout
 
-import javax.swing.*
+import javax.swing.JTabbedPane
+import javax.swing.SwingConstants
+import javax.swing.JInternalFrame
 	
-    public var JTabbedPane_start_21       = JTabbedPane()
+    public var JTabbedPane_start_08_21    = JTabbedPane()
     public var JInternalFrame_start_08_21 = JInternalFrame()
            
 fun KOT_start_21_08() { 
                          
-        JTabbedPane_start_21 = JTabbedPane()
-        JTabbedPane_start_21.removeAll()
+        JTabbedPane_start_08_21 = JTabbedPane()
+        JTabbedPane_start_08_21.removeAll()
 
-        JTabbedPane_start_21.setTabPlacement(SwingConstants.BOTTOM)
-        JTabbedPane_start_21.setTabLayoutPolicy(1)
+        JTabbedPane_start_08_21.setTabPlacement(SwingConstants.BOTTOM)
+        JTabbedPane_start_08_21.setTabLayoutPolicy(1)
         
         JInternalFrame_start_08_21 = JInternalFrame("21 START", true, false, true, true)
         JInternalFrame_start_08_21.setLayout(BorderLayout())
         JInternalFrame_start_08_21.setBackground(Color.GRAY)
         JInternalFrame_start_08_21.isVisible = true
 
-        JInternalFrame_start_08_21.add(JTabbedPane_start_21, BorderLayout.CENTER)
+        JInternalFrame_start_08_21.add(JTabbedPane_start_08_21, BorderLayout.CENTER)
                
 }  //  end KOT_start_21_08()
-
-

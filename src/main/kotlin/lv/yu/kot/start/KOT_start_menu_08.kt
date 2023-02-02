@@ -15,17 +15,17 @@ import javax.swing.JMenu
 
 import java.awt.event.KeyEvent
 
-    public var menu_Menu = JMenu()
+    public var menu_Menu_08 = JMenu()
 
 fun KOT_start_menu_08() {
 
         lv.yu.kot.menubar_08 = JMenuBar()      
-    	lv.yu.kot.menubar_08.setLayout( lv.yu.kot.JAV_LIB_wrap_layout (lv.yu.kot.JAV_LIB_wrap_layout.LEFT, 0, 0) )
+    	lv.yu.kot.menubar_08.setLayout( lv.yu.kot.JAV_LIB_wrap_layout(lv.yu.kot.JAV_LIB_wrap_layout.LEFT, 0, 0) )
     	
-            menu_Menu = JMenu("Menu")
-            menu_Menu.mnemonic = KeyEvent.VK_M  //  Alt M
-            menu_Menu.toolTipText = "Menu commands"    
+            menu_Menu_08 = JMenu("Menu")
+            menu_Menu_08.mnemonic = KeyEvent.VK_M  //  Alt M
+            menu_Menu_08.toolTipText = "Menu commands"    
 
-            lv.yu.kot.menubar_08.add(menu_Menu) 
+            lv.yu.kot.menubar_08.add(menu_Menu_08) 
                         
 }  //  end KOT_start_menu_08()

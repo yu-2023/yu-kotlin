@@ -3,7 +3,7 @@
  * 
  * Kotlin package     lv.yu.kot.start
  * 
- * Kotlin program     KOT_start_menu_start_08.kt     Apache License 2.0
+ * Kotlin program     KOT_start_menu_start_10.kt     Apache License 2.0
  *      
  * Copyright (c)      Yuri Utkin 2023                mob.+371 12345678     https://www.jago.lv
  * 
@@ -17,29 +17,29 @@ import javax.swing.KeyStroke
 import java.awt.event.KeyEvent
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
-	
-fun KOT_start_menu_start_08() {
+
+fun KOT_start_menu_start_10() {
 
 //------------------------------
     	
     val icon_Start = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/start.gif"))
     
 //------------------------------
-	
+      
       val item_Start = JMenuItem("Start", icon_Start)
           item_Start.toolTipText = "Start application"
           item_Start.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.ALT_MASK))  //  Alt S
  
 //------------------------------
             
-          item_Start.addActionListener { e: ActionEvent -> lv.yu.kot.start.KOT_start_visualize_08() }
-    
+          item_Start.addActionListener { e: ActionEvent -> lv.yu.kot.start.KOT_start_visualize_10() }
+
 //------------------------------
             
-        lv.yu.kot.start.menu_Menu_08.add(item_Start)
+        lv.yu.kot.start.menu_Menu_10.add(item_Start)
 
-        lv.yu.kot.menubar_08.add(lv.yu.kot.start.menu_Menu_08)
+        lv.yu.kot.menubar_10.add(lv.yu.kot.start.menu_Menu_10)
        
 //------------------------------
             
-}  //  end KOT_start_menu_start_08()
+}  //  end KOT_start_menu_start_10()

@@ -10,9 +10,6 @@
  */
 package lv.yu.kot.start
 
-import java.awt.*
-import javax.swing.*
-
 fun KOT_start_08() {
     
     lv.yu.kot.start.KOT_start_menu_08()
