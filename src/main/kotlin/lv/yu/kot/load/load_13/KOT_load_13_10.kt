@@ -25,7 +25,7 @@ fun KOT_load_13_10() {
         JTabbedPane_load_10_13 = JTabbedPane()
     	JTabbedPane_load_10_13.removeAll()
     	
-	    KOT_load_13_about_10()
+        KOT_load_13_about_10()
         KOT_load_13_help_10()
 
         JTabbedPane_load_10_13.setTabPlacement(SwingConstants.BOTTOM)
