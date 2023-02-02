@@ -17,29 +17,29 @@ import javax.swing.KeyStroke
 import java.awt.event.KeyEvent
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
-	
-fun KOT_xxxxx_menu_start_08() {
+
+fun KOT_xxxxx_menu_start_09() {
 
 //------------------------------
     	
     val icon_Xxxx = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/xxxx.png")) 
     
 //------------------------------
-	
+      
       val item_Xxxx = JMenuItem("Xxxx", icon_Xxxx)
           item_Xxxx.toolTipText = "Xxxx application"
-          item_Xxxx.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, ActionEvent.ALT_MASK))  //  Alt X
-          
+          item_Xxxx.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, ActionEvent.ALT_MASK))   //  Alt X  
+ 
 //------------------------------
-          
-          item_Xxxx.addActionListener { e: ActionEvent -> System.out.println("Selected menu: " + e.getActionCommand()) }
+    
+          item_Xxxx.addActionListener { e: ActionEvent -> lv.yu.kot.xxxxx.KOT_xxxxx_visualize_09() }
 
 //------------------------------
             
-        lv.yu.kot.start.menu_Menu_08.add(item_Xxxx)
+        lv.yu.kot.start.menu_Menu_09.add(item_Xxxx)
 
-        lv.yu.kot.menubar_08.add(lv.yu.kot.start.menu_Menu_08)
+        lv.yu.kot.menubar_09.add(lv.yu.kot.start.menu_Menu_09)
        
 //------------------------------
             
-}  //  end KOT_xxxxx_menu_start_08()
+}  //  end KOT_xxxxx_menu_start_09()
