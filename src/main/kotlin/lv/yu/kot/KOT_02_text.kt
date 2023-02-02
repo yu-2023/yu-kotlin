@@ -17,35 +17,37 @@ import javax.swing.ImageIcon
 
 import java.awt.BorderLayout
 import java.awt.EventQueue
+//------------------------------
+
+    /** frame */
+    public var frame_02 = JFrame()
 
 //------------------------------
 
 fun KOT_02_text() {  //  KOT_02_text demonstrates Kotlin TextArea in Kotlin Frame
 	
-    var imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
-    var icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
+    val imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
+    val icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
 
 //------------------------------	
 
-    var title = "KOTLIN -- KOT_02_text -- v. 2023.01.01"
-
-    val frame = JFrame()
+    val title = "KOTLIN -- KOT_02_text -- v. 2023.01.01"
     
-        frame.setTitle("     " + title)
+        frame_02.setTitle("     " + title)
     
-        frame.setBounds(10+1*40+150, 10+1*40, 1000, 600)
+        frame_02.setBounds(10+1*40+150, 10+1*40, 1000, 600)
         
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+        frame_02.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
         
-        frame.setIconImage(icon_frame.getImage())
+        frame_02.setIconImage(icon_frame.getImage())
         
-        frame.setLayout(BorderLayout())
+        frame_02.setLayout(BorderLayout())
         
-        frame.isVisible = true
+        frame_02.isVisible = true
 
 //------------------------------
 
-    val textarea = JTextArea()
+    val textarea   = JTextArea()
     val scrollpane = JScrollPane(textarea)
     	    
         textarea.setText("" +
@@ -80,9 +82,9 @@ fun KOT_02_text() {  //  KOT_02_text demonstrates Kotlin TextArea in Kotlin Fram
 "        \r\n" +
         		         "")
 
-        frame.getContentPane().add(scrollpane, BorderLayout.CENTER)
+        frame_02.getContentPane().add(scrollpane, BorderLayout.CENTER)
     	        
-        frame.setVisible(true)
+        frame_02.setVisible(true)
 
 //------------------------------	    
 	    

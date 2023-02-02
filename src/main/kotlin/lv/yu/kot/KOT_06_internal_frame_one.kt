@@ -34,28 +34,46 @@ import java.awt.event.ActionListener
 
 //------------------------------
 
+/** frame */
+public var frame_06 = JFrame()
+
+/** manubar */
+public var menubar_06 = JMenuBar()
+
+/** panel_1 */    
+public var panel_06_1 = JPanel()
+
+/** panel_3 */
+public var panel_06_3 = JPanel()
+
+/** label_info */
+public var label_info_06 = JLabel()
+
+/** desktoppane_12 */
+public var desktoppane_06_12 = JDesktopPane()
+
+//------------------------------
+
 fun KOT_06_internal_frame_one() { 
 
-    var imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
-    var icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
+    val imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
+    val icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
     
 //------------------------------
 
-    var title = "KOTLIN -- KOT_06_internal_frame_one -- v. 2023.01.01"
-    
-    val frame = JFrame()
+    val title = "KOTLIN -- KOT_06_internal_frame_one -- v. 2023.01.01"
 
-        frame.setTitle("     " + title)
+        frame_06.setTitle("     " + title)
         
-        frame.setBounds(10+5*40+150, 10+5*40, 1000, 600)
+        frame_06.setBounds(10+5*40+150, 10+5*40, 1000, 600)
       
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+        frame_06.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
         
-        frame.setIconImage(icon_frame.getImage())
+        frame_06.setIconImage(icon_frame.getImage())
         
-        frame.setLayout(BorderLayout())
+        frame_06.setLayout(BorderLayout())
         
-        frame.isVisible = true
+        frame_06.isVisible = true
         
 //------------------------------        
         
@@ -71,8 +89,6 @@ fun KOT_06_internal_frame_one() {
     val icon_Exit        = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/exit.png"))
         
 //------------------------------
-    
-    val menubar = JMenuBar()
         
     val menu_Menu = JMenu("Menu")
       val item_Start = JMenuItem("Start", icon_Start)
@@ -191,41 +207,41 @@ fun KOT_06_internal_frame_one() {
         
         menu_Exit.add(item_Exit)
         
-        menubar.add(menu_Menu)
-        menubar.add(menu_Start1)
-        menubar.add(menu_Start2)
-        menubar.add(menu_Start3)
-        menubar.add(menu_Help)
-        menubar.add(menu_Lang)
-        menubar.add(menu_Exit)
+        menubar_06.add(menu_Menu)
+        menubar_06.add(menu_Start1)
+        menubar_06.add(menu_Start2)
+        menubar_06.add(menu_Start3)
+        menubar_06.add(menu_Help)
+        menubar_06.add(menu_Lang)
+        menubar_06.add(menu_Exit)
     
-    	menubar.setLayout( JAV_LIB_wrap_layout (JAV_LIB_wrap_layout.LEFT, 0, 0) )
+    	menubar_06.setLayout( JAV_LIB_wrap_layout (JAV_LIB_wrap_layout.LEFT, 0, 0) )
     	
-        frame.jMenuBar = menubar
+//------------------------------
+    	
+        frame_06.jMenuBar = menubar_06
 
 //------------------------------
 
-    val panel_1 = JPanel()
-        panel_1.setLayout(BorderLayout())
-        panel_1.setBackground(Color.CYAN)
+        panel_06_1.setLayout(BorderLayout())
+        panel_06_1.setBackground(Color.CYAN)
 
-    val panel_3 = JPanel()
-        panel_3.setLayout(BorderLayout())
-        panel_3.setBackground(Color.lightGray)
+        panel_06_3.setLayout(BorderLayout())
+        panel_06_3.setBackground(Color.lightGray)
         
-    val label_info = JLabel()
-        label_info.setText("     Copyright     (c)     Yuri Utkin 2023     mob.+371 12345678     https://www.jago.lv")
-        label_info.setForeground(Color.BLACK)
+        label_info_06.setText("     Copyright     (c)     Yuri Utkin 2023     mob.+371 12345678     https://www.jago.lv")
+        label_info_06.setForeground(Color.BLACK)
         
-        panel_3.add(label_info, BorderLayout.CENTER)
+        panel_06_3.add(label_info_06, BorderLayout.CENTER)
 
-        frame.getContentPane().add(panel_1, BorderLayout.NORTH)
-        frame.getContentPane().add(panel_3, BorderLayout.SOUTH)
+        frame_06.getContentPane().add(panel_06_1, BorderLayout.NORTH)
+        frame_06.getContentPane().add(panel_06_3, BorderLayout.SOUTH)
                        
-    val desktoppane_12 = JDesktopPane()
-        desktoppane_12.setLayout(BorderLayout())
-        desktoppane_12.setBackground(Color.RED)
-        desktoppane_12.setPreferredSize(Dimension(1000, 500+22))
+//------------------------------
+        
+        desktoppane_06_12.setLayout(BorderLayout())
+        desktoppane_06_12.setBackground(Color.RED)
+        desktoppane_06_12.setPreferredSize(Dimension(1000, 500+22))
 
 //------------------------------
         
@@ -236,13 +252,13 @@ fun KOT_06_internal_frame_one() {
   
 //------------------------------
 
-        desktoppane_12.add(internalframe_start_12, BorderLayout.CENTER)
+        desktoppane_06_12.add(internalframe_start_12, BorderLayout.CENTER)
            
-        panel_1.add(desktoppane_12, BorderLayout.CENTER)
+        panel_06_1.add(desktoppane_06_12, BorderLayout.CENTER)
 
 //------------------------------
         
-        frame.isVisible = true
+        frame_06.isVisible = true
         
 //------------------------------ 
         

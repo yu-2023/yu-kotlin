@@ -28,28 +28,34 @@ import java.awt.event.ActionEvent
 
 //------------------------------
 
+    /** frame */
+    public var frame_03 = JFrame()
+
+    /** manubar */
+    public var menubar_03 = JMenuBar()
+
+//------------------------------
+
 fun KOT_03_menu() {
 	
-    var imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
-    var icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
+    val imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
+    val icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
 
 //------------------------------	
 
-    var title = "KOTLIN -- KOT_03_menu -- v. 2023.01.01"
-
-    val frame = JFrame()
+    val title = "KOTLIN -- KOT_03_menu -- v. 2023.01.01"
     
-        frame.setTitle("     " + title)
+        frame_03.setTitle("     " + title)
     
-        frame.setBounds(10+2*40+150, 10+2*40, 1000, 600)
+        frame_03.setBounds(10+2*40+150, 10+2*40, 1000, 600)
         
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+        frame_03.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
         
-        frame.setIconImage(icon_frame.getImage())
+        frame_03.setIconImage(icon_frame.getImage())
         
-        frame.setLayout(BorderLayout())
+        frame_03.setLayout(BorderLayout())
         
-        frame.isVisible = true
+        frame_03.isVisible = true
 
 //------------------------------
 
@@ -65,8 +71,6 @@ fun KOT_03_menu() {
     val icon_Exit        = ImageIcon(Thread.currentThread().contextClassLoader.getResource("lv/yu/kot/KOT_resources/exit.png"))
         
 //------------------------------
-        
-    val menubar = JMenuBar()
 
     val menu_Menu = JMenu("Menu")
       val item_Start = JMenuItem("Start", icon_Start)
@@ -166,19 +170,21 @@ fun KOT_03_menu() {
         
         menu_Exit.add(item_Exit)
             
-        menubar.add(menu_Menu)
-        menubar.add(menu_Start1)
-        menubar.add(menu_Start2)
-        menubar.add(menu_Start3)
-        menubar.add(menu_Help)
-        menubar.add(menu_Lang)
-        menubar.add(menu_Exit)
+        menubar_03.add(menu_Menu)
+        menubar_03.add(menu_Start1)
+        menubar_03.add(menu_Start2)
+        menubar_03.add(menu_Start3)
+        menubar_03.add(menu_Help)
+        menubar_03.add(menu_Lang)
+        menubar_03.add(menu_Exit)
+
+//------------------------------
         
-        frame.jMenuBar = menubar
+        frame_03.jMenuBar = menubar_03
 
 //------------------------------
 
-    val textarea = JTextArea()
+    val textarea   = JTextArea()
     val scrollpane = JScrollPane(textarea)
     	    
         textarea.setText("" +
@@ -213,9 +219,9 @@ fun KOT_03_menu() {
 "        \r\n" +
         		         "")
 
-        frame.getContentPane().add(scrollpane, BorderLayout.CENTER)
+        frame_03.getContentPane().add(scrollpane, BorderLayout.CENTER)
 
-        frame.isVisible = true
+        frame_03.isVisible = true
 
 //------------------------------
 	    

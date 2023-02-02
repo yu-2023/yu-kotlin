@@ -107,6 +107,8 @@ fun KOT_08_internal_frames() {
         frame_08.getContentPane().add(panel_08_2, BorderLayout.CENTER)
         frame_08.getContentPane().add(panel_08_3, BorderLayout.SOUTH)
 
+//------------------------------
+        
         desktoppane_08_11.setLayout(BorderLayout())
         desktoppane_08_11.setBackground(Color.RED)
         desktoppane_08_11.setPreferredSize(Dimension(200, 350))

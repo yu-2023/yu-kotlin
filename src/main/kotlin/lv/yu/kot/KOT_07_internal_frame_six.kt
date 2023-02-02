@@ -22,7 +22,6 @@ import javax.swing.JMenuItem
 import javax.swing.JCheckBoxMenuItem
 import javax.swing.KeyStroke
 
-import java.awt.Toolkit
 import java.awt.Color
 import java.awt.Dimension
 import java.awt.BorderLayout
@@ -34,28 +33,64 @@ import java.awt.event.ActionListener
 	
 //------------------------------
 
-fun KOT_07_internal_frame_six() { 
+    /** frame */
+    public var frame_07 = JFrame()
 
-    var imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
-    var icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
+    /** manubar */
+    public var menubar_07 = JMenuBar()
+
+    /** panel_1 */    
+    public var panel_07_1 = JPanel()
+
+    /** panel_2 */
+    public var panel_07_2 = JPanel()
+
+    /** panel_3 */
+    public var panel_07_3 = JPanel()
+
+    /** label_info */
+    public var label_info_07 = JLabel()
+
+    /** desktoppane_11 */
+    public var desktoppane_07_11 = JDesktopPane()
+
+    /** desktoppane_12 */
+    public var desktoppane_07_12 = JDesktopPane()
+
+    /** desktoppane_13 */
+    public var desktoppane_07_13 = JDesktopPane()
+
+    /** desktoppane_21 */
+    public var desktoppane_07_21 = JDesktopPane()
+
+    /** desktoppane_22 */
+    public var desktoppane_07_22 = JDesktopPane()
+
+    /** desktoppane_23 */
+    public var desktoppane_07_23 = JDesktopPane()
 
 //------------------------------
 
-    var title = "KOTLIN -- KOT_07_internal_frame_six -- v. 2023.01.01"
-    
-    val frame = JFrame()
+fun KOT_07_internal_frame_six() { 
 
-        frame.setTitle("     " + title)
+    val imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
+    val icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
+
+//------------------------------
+
+    val title = "KOTLIN -- KOT_07_internal_frame_six -- v. 2023.01.01"
+
+        frame_07.setTitle("     " + title)
         
-        frame.setBounds(10+6*40+150, 10+6*40, 1000, 600)
+        frame_07.setBounds(10+6*40+150, 10+6*40, 1000, 600)
       
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+        frame_07.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
         
-        frame.setIconImage(icon_frame.getImage())
+        frame_07.setIconImage(icon_frame.getImage())
         
-        frame.setLayout(BorderLayout())
+        frame_07.setLayout(BorderLayout())
         
-        frame.isVisible = true
+        frame_07.isVisible = true
         
 //------------------------------        
         
@@ -71,8 +106,6 @@ fun KOT_07_internal_frame_six() {
     val icon_Exit        = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/exit.png"))
         
 //------------------------------
-    
-    val menubar = JMenuBar()
         
     val menu_Menu = JMenu("Menu")
       val item_Start = JMenuItem("Start", icon_Start)
@@ -191,71 +224,65 @@ fun KOT_07_internal_frame_six() {
         
         menu_Exit.add(item_Exit)
             
-        menubar.add(menu_Menu)
-        menubar.add(menu_Start1)
-        menubar.add(menu_Start2)
-        menubar.add(menu_Start3)
-        menubar.add(menu_Help)
-        menubar.add(menu_Lang)
-        menubar.add(menu_Exit)
+        menubar_07.add(menu_Menu)
+        menubar_07.add(menu_Start1)
+        menubar_07.add(menu_Start2)
+        menubar_07.add(menu_Start3)
+        menubar_07.add(menu_Help)
+        menubar_07.add(menu_Lang)
+        menubar_07.add(menu_Exit)
         
-    	menubar.setLayout( JAV_LIB_wrap_layout (JAV_LIB_wrap_layout.LEFT, 0, 0) )
-
-        frame.jMenuBar = menubar
+    	menubar_07.setLayout( JAV_LIB_wrap_layout (JAV_LIB_wrap_layout.LEFT, 0, 0) )
+  
+//------------------------------
+    	
+        frame_07.jMenuBar = menubar_07
 
 //------------------------------
 
-    val panel_1 = JPanel()
-        panel_1.setLayout(BorderLayout())
-        panel_1.setBackground(Color.CYAN)
+        panel_07_1.setLayout(BorderLayout())
+        panel_07_1.setBackground(Color.CYAN)
+          
+        panel_07_2.setLayout(BorderLayout())
+        panel_07_2.setBackground(Color.MAGENTA)
+
+        panel_07_3.setLayout(BorderLayout())
+        panel_07_3.setBackground(Color.lightGray)
         
-    val panel_2 = JPanel()        
-        panel_2.setLayout(BorderLayout())
-        panel_2.setBackground(Color.MAGENTA)
-
-    val panel_3 = JPanel()
-        panel_3.setLayout(BorderLayout())
-        panel_3.setBackground(Color.lightGray)
+        label_info_07.setText("     Copyright     (c)     Yuri Utkin 2022     mob.+371 12345678     https://www.jago.lv")
+        label_info_07.setForeground(Color.BLACK)
         
-    val label_info = JLabel()
-        label_info.setText("     Copyright     (c)     Yuri Utkin 2022     mob.+371 12345678     https://www.jago.lv")
-        label_info.setForeground(Color.BLACK)
+        panel_07_3.add(label_info_07, BorderLayout.CENTER)
+
+        frame_07.getContentPane().add(panel_07_1, BorderLayout.NORTH)
+        frame_07.getContentPane().add(panel_07_2, BorderLayout.CENTER)
+        frame_07.getContentPane().add(panel_07_3, BorderLayout.SOUTH)
+
+//------------------------------
         
-        panel_3.add(label_info, BorderLayout.CENTER)
+        desktoppane_07_11.setLayout(BorderLayout())
+        desktoppane_07_11.setBackground(Color.RED)
+        desktoppane_07_11.setPreferredSize(Dimension(200, 350))
 
-        frame.getContentPane().add(panel_1, BorderLayout.NORTH)
-        frame.getContentPane().add(panel_2, BorderLayout.CENTER)
-        frame.getContentPane().add(panel_3, BorderLayout.SOUTH)
-        
-    val desktoppane_11 = JDesktopPane()
-        desktoppane_11.setLayout(BorderLayout())
-        desktoppane_11.setBackground(Color.RED)
-        desktoppane_11.setPreferredSize(Dimension(200, 350))
+        desktoppane_07_12.setLayout(BorderLayout())
+        desktoppane_07_12.setBackground(Color.PINK)
+        desktoppane_07_12.setPreferredSize(Dimension(600, 350))
 
-    val desktoppane_12 = JDesktopPane()
-        desktoppane_12.setLayout(BorderLayout())
-        desktoppane_12.setBackground(Color.PINK)
-        desktoppane_12.setPreferredSize(Dimension(600, 350))
+        desktoppane_07_13.setLayout(BorderLayout())
+        desktoppane_07_13.setBackground(Color.YELLOW)
+        desktoppane_07_13.setPreferredSize(Dimension(200, 350))    
 
-    val desktoppane_13 = JDesktopPane()
-        desktoppane_13.setLayout(BorderLayout())
-        desktoppane_13.setBackground(Color.YELLOW)
-        desktoppane_13.setPreferredSize(Dimension(200, 350))    
+        desktoppane_07_21.setLayout(BorderLayout())
+        desktoppane_07_21.setBackground(Color.BLUE)
+        desktoppane_07_21.setPreferredSize(Dimension(200, 150))    
 
-    val desktoppane_21 = JDesktopPane()
-        desktoppane_21.setLayout(BorderLayout())
-        desktoppane_21.setBackground(Color.BLUE)
-        desktoppane_21.setPreferredSize(Dimension(200, 150))    
-    	
-    val desktoppane_22 = JDesktopPane()
-        desktoppane_22.setLayout(BorderLayout())
-        desktoppane_22.setBackground(Color.CYAN)
-        desktoppane_22.setPreferredSize(Dimension(600, 150))      
+        desktoppane_07_22.setLayout(BorderLayout())
+        desktoppane_07_22.setBackground(Color.CYAN)
+        desktoppane_07_22.setPreferredSize(Dimension(600, 150))      
 
-    val desktoppane_23 = JDesktopPane()
-        desktoppane_23.setLayout(BorderLayout())
-        desktoppane_23.setBackground(Color.GREEN)
-        desktoppane_23.setPreferredSize(Dimension(200, 150))                	
+        desktoppane_07_23.setLayout(BorderLayout())
+        desktoppane_07_23.setBackground(Color.GREEN)
+        desktoppane_07_23.setPreferredSize(Dimension(200, 150))                	
 
 //------------------------------
 
@@ -291,23 +318,23 @@ fun KOT_07_internal_frame_six() {
 
 //------------------------------
 
-        desktoppane_11.add(internalframe_start_11, BorderLayout.CENTER)
-        desktoppane_12.add(internalframe_start_12, BorderLayout.CENTER)
-        desktoppane_13.add(internalframe_start_13, BorderLayout.CENTER)
-        desktoppane_21.add(internalframe_start_21, BorderLayout.CENTER)
-        desktoppane_22.add(internalframe_start_22, BorderLayout.CENTER)
-        desktoppane_23.add(internalframe_start_23, BorderLayout.CENTER)
+        desktoppane_07_11.add(internalframe_start_11, BorderLayout.CENTER)
+        desktoppane_07_12.add(internalframe_start_12, BorderLayout.CENTER)
+        desktoppane_07_13.add(internalframe_start_13, BorderLayout.CENTER)
+        desktoppane_07_21.add(internalframe_start_21, BorderLayout.CENTER)
+        desktoppane_07_22.add(internalframe_start_22, BorderLayout.CENTER)
+        desktoppane_07_23.add(internalframe_start_23, BorderLayout.CENTER)
            
-        panel_1.add(desktoppane_11, BorderLayout.WEST)
-        panel_1.add(desktoppane_12, BorderLayout.CENTER)
-        panel_1.add(desktoppane_13, BorderLayout.EAST)
-        panel_2.add(desktoppane_21, BorderLayout.WEST)
-        panel_2.add(desktoppane_22, BorderLayout.CENTER)
-        panel_2.add(desktoppane_23, BorderLayout.EAST)
+        panel_07_1.add(desktoppane_07_11, BorderLayout.WEST)
+        panel_07_1.add(desktoppane_07_12, BorderLayout.CENTER)
+        panel_07_1.add(desktoppane_07_13, BorderLayout.EAST)
+        panel_07_2.add(desktoppane_07_21, BorderLayout.WEST)
+        panel_07_2.add(desktoppane_07_22, BorderLayout.CENTER)
+        panel_07_2.add(desktoppane_07_23, BorderLayout.EAST)
 
 //------------------------------
         
-        frame.isVisible = true
+        frame_07.isVisible = true
         
 //------------------------------ 
         

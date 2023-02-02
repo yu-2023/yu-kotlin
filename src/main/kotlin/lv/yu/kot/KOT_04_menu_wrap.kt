@@ -28,28 +28,34 @@ import java.awt.event.ActionEvent
 
 //------------------------------
 
-fun KOT_04_menu_wrap() {
-	
-    var imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
-    var icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
+    /** frame */
+    public var frame_04 = JFrame()
+
+    /** manubar */
+    public var menubar_04 = JMenuBar()
 
 //------------------------------
 
-    var title = "KOTLIN -- KOT_04_menu_wrap -- v. 2023.01.01"
+fun KOT_04_menu_wrap() {
+	
+    val imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
+    val icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
 
-    val frame = JFrame()
+//------------------------------
+
+    val title = "KOTLIN -- KOT_04_menu_wrap -- v. 2023.01.01"
     
-        frame.setTitle("     " + title)
+        frame_04.setTitle("     " + title)
     
-        frame.setBounds(10+3*40+150, 10+3*40, 1000, 600)
+        frame_04.setBounds(10+3*40+150, 10+3*40, 1000, 600)
         
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+        frame_04.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
         
-        frame.setIconImage(icon_frame.getImage())
+        frame_04.setIconImage(icon_frame.getImage())
         
-        frame.setLayout(BorderLayout())
+        frame_04.setLayout(BorderLayout())
         
-        frame.isVisible = true
+        frame_04.isVisible = true
 
 //------------------------------
 
@@ -65,8 +71,6 @@ fun KOT_04_menu_wrap() {
     val icon_Exit        = ImageIcon(Thread.currentThread().contextClassLoader.getResource("lv/yu/kot/KOT_resources/exit.png"))
         
 //------------------------------
-            
-    val menubar = JMenuBar()
 
     val menu_Menu = JMenu("Menu")
       val item_Start = JMenuItem("Start", icon_Start)
@@ -166,21 +170,23 @@ fun KOT_04_menu_wrap() {
     	        
         menu_Exit.add(item_Exit)
     	            
-        menubar.add(menu_Menu)
-        menubar.add(menu_Start1)
-        menubar.add(menu_Start2)
-        menubar.add(menu_Start3)
-        menubar.add(menu_Help)
-        menubar.add(menu_Lang)
-        menubar.add(menu_Exit)
+        menubar_04.add(menu_Menu)
+        menubar_04.add(menu_Start1)
+        menubar_04.add(menu_Start2)
+        menubar_04.add(menu_Start3)
+        menubar_04.add(menu_Help)
+        menubar_04.add(menu_Lang)
+        menubar_04.add(menu_Exit)
         
-    	menubar.setLayout( JAV_LIB_wrap_layout (JAV_LIB_wrap_layout.LEFT, 0, 0) )
+    	menubar_04.setLayout( JAV_LIB_wrap_layout (JAV_LIB_wrap_layout.LEFT, 0, 0) )
 
-        frame.jMenuBar = menubar
+//------------------------------
+    	
+        frame_04.jMenuBar = menubar_04
 
 //------------------------------
 
-    val textarea = JTextArea()
+    val textarea   = JTextArea()
     val scrollpane = JScrollPane(textarea)
     
         textarea.setText("" +
@@ -215,9 +221,9 @@ fun KOT_04_menu_wrap() {
 "        \r\n" +
         		         "")
 
-        frame.getContentPane().add(scrollpane, BorderLayout.CENTER)
+        frame_04.getContentPane().add(scrollpane, BorderLayout.CENTER)
 
-        frame.isVisible = true
+        frame_04.isVisible = true
 
 //------------------------------
 	    

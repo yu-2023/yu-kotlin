@@ -29,28 +29,34 @@ import java.awt.event.ActionListener
 
 //------------------------------
 
-fun KOT_05_action() {
+/** frame */
+public var frame_05 = JFrame()
 
-    var imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
-    var icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
+/** manubar */
+public var menubar_05 = JMenuBar()
 
 //------------------------------
 
-    var title = "KOTLIN -- KOT_05_action -- v. 2023.01.01"
+fun KOT_05_action() {
 
-    val frame = JFrame()
-	
-        frame.setTitle("     " + title)
+    val imgURL     =           Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg")  
+    val icon_frame = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/KOT.jpg"))
+
+//------------------------------
+
+    val title = "KOTLIN -- KOT_05_action -- v. 2023.01.01"
+
+        frame_05.setTitle("     " + title)
     
-        frame.setBounds(10+4*40+150, 10+4*40, 1000, 600)
+        frame_05.setBounds(10+4*40+150, 10+4*40, 1000, 600)
         
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+        frame_05.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
         
-        frame.setIconImage(icon_frame.getImage())
+        frame_05.setIconImage(icon_frame.getImage())
         
-        frame.setLayout(BorderLayout())
+        frame_05.setLayout(BorderLayout())
         
-        frame.isVisible = true
+        frame_05.isVisible = true
 
 //------------------------------
 
@@ -66,8 +72,6 @@ fun KOT_05_action() {
     val icon_Exit        = ImageIcon(Thread.currentThread().getContextClassLoader().getResource("lv/yu/kot/KOT_resources/exit.png"))
 
 //------------------------------
-            
-    val menubar = JMenuBar()
 
     val menu_Menu = JMenu("Menu")
       val item_Start = JMenuItem("Start", icon_Start)
@@ -186,17 +190,19 @@ fun KOT_05_action() {
     	        
         menu_Exit.add(item_Exit)
     	            
-        menubar.add(menu_Menu)
-        menubar.add(menu_Start1)
-        menubar.add(menu_Start2)
-        menubar.add(menu_Start3)
-        menubar.add(menu_Help)
-        menubar.add(menu_Lang)
-        menubar.add(menu_Exit)
+        menubar_05.add(menu_Menu)
+        menubar_05.add(menu_Start1)
+        menubar_05.add(menu_Start2)
+        menubar_05.add(menu_Start3)
+        menubar_05.add(menu_Help)
+        menubar_05.add(menu_Lang)
+        menubar_05.add(menu_Exit)
     	      
-    	menubar.setLayout( JAV_LIB_wrap_layout (JAV_LIB_wrap_layout.LEFT, 0, 0) )
+    	menubar_05.setLayout( JAV_LIB_wrap_layout (JAV_LIB_wrap_layout.LEFT, 0, 0) )
     	
-        frame.jMenuBar = menubar
+//------------------------------
+    	
+        frame_05.jMenuBar = menubar_05
 
  //------------------------------
 
@@ -235,9 +241,9 @@ fun KOT_05_action() {
 "        \r\n" +
       		             "")
         
-        frame.getContentPane().add(scrollpane, BorderLayout.CENTER)
+        frame_05.getContentPane().add(scrollpane, BorderLayout.CENTER)
 	    
-        frame.isVisible = true
+        frame_05.isVisible = true
 
 //------------------------------
 	    
