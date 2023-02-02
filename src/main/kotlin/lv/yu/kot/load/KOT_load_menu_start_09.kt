@@ -8,8 +8,7 @@
  * Copyright (c)      Yuri Utkin 2023               mob.+371 12345678     https://www.jago.lv
  * 
  */
-package lv.yu.kot.load  //  KOT_load_menu_start.kt
-
+package lv.yu.kot.load
 import javax.swing.JMenuItem
 import javax.swing.ImageIcon
 import javax.swing.KeyStroke
