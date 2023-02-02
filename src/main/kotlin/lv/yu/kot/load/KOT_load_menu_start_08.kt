@@ -36,9 +36,9 @@ fun KOT_load_menu_start_08() {
 
 //------------------------------
             
-        lv.yu.kot.start.menu_Menu.add(item_Load)
+        lv.yu.kot.start.menu_Menu_08.add(item_Load)
 
-        lv.yu.kot.menubar_08.add(lv.yu.kot.start.menu_Menu)
+        lv.yu.kot.menubar_08.add(lv.yu.kot.start.menu_Menu_08)
             
 //------------------------------
        
