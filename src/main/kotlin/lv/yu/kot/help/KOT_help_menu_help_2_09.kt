@@ -25,12 +25,12 @@ fun KOT_help_menu_help_2_09() {
             
         val item_He21 = JMenuItem("He21")
             item_He21.toolTipText = "He21 application"
-			item_He21.addActionListener { e: ActionEvent -> System.out.println("Selected menu: " + e.getActionCommand()) }
+            item_He21.addActionListener { e: ActionEvent -> System.out.println("Selected menu: " + e.getActionCommand()) }
             menu_Help_2.add(item_He21)
 
         val item_He22 = JMenuItem("He22")
             item_He22.toolTipText = "He22 application"
-			item_He22.addActionListener { e: ActionEvent -> System.out.println("Selected menu: " + e.getActionCommand()) }
+            item_He22.addActionListener { e: ActionEvent -> System.out.println("Selected menu: " + e.getActionCommand()) }
             menu_Help_2.add(item_He22)
 
             lv.yu.kot.menubar_09.add(menu_Help_2)      
