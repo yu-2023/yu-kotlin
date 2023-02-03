@@ -51,7 +51,7 @@ fun KOT_01_frame() {  //  KOT_01_frame demonstrates Kotlin Frame
 //------------------------------
 
 fun main() {
-	              EventQueue.invokeLater(::KOT_01_frame)
+                  EventQueue.invokeLater(::KOT_01_frame)
 }  //  end main()
 
 //------------------------------
