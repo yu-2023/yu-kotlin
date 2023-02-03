@@ -45,6 +45,18 @@ fun KOT_01_frame() {  //  KOT_01_frame demonstrates Kotlin Frame
         frame_01.isVisible = true
 	    
 //------------------------------
+
+        lv.yu.kot.KOT_02_text()
+        lv.yu.kot.KOT_03_menu()
+        lv.yu.kot.KOT_04_menu_wrap()
+        lv.yu.kot.KOT_05_action()
+        lv.yu.kot.KOT_06_internal_frame_one()
+        lv.yu.kot.KOT_07_internal_frame_six()
+        lv.yu.kot.KOT_08_internal_frames()
+        lv.yu.kot.KOT_09_internal_frames_change()
+        lv.yu.kot.KOT_10_tabs()
+
+//------------------------------
 	    
 }  //  end KOT_01_frame()
 
