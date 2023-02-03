@@ -93,7 +93,7 @@ fun KOT_02_text() {  //  KOT_02_text demonstrates Kotlin TextArea in Kotlin Fram
 //------------------------------
 
 fun main() {
-	              EventQueue.invokeLater(::KOT_02_text)
+                  EventQueue.invokeLater(::KOT_02_text)
 }  //  end main()
 
 //------------------------------
