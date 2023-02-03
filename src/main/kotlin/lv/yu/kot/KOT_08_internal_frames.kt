@@ -73,7 +73,7 @@ fun KOT_08_internal_frames() {
             
         frame_08.setTitle("     " + title)
         
-        frame_08.setBounds(10+7*40, 10+7*40, 1000, 600)
+        frame_08.setBounds(10+7*40+150, 10+7*40, 1000, 600)
          
         frame_08.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
           

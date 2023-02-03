@@ -73,7 +73,7 @@ fun KOT_10_tabs() {
             
         frame_10.setTitle("     " + title)
         
-        frame_10.setBounds(10+9*40, 10+9*40, 1000, 600)
+        frame_10.setBounds(10+9*40+150, 10+9*40, 1000, 600)
          
         frame_10.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
           
