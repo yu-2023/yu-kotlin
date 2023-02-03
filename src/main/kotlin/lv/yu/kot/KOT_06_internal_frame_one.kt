@@ -34,23 +34,23 @@ import java.awt.event.ActionListener
 
 //------------------------------
 
-/** frame */
-public var frame_06 = JFrame()
+    /** frame */
+    public var frame_06 = JFrame()
 
-/** manubar */
-public var menubar_06 = JMenuBar()
+    /** manubar */
+    public var menubar_06 = JMenuBar()
 
-/** panel_1 */    
-public var panel_06_1 = JPanel()
+    /** panel_1 */    
+    public var panel_06_1 = JPanel()
 
-/** panel_3 */
-public var panel_06_3 = JPanel()
+    /** panel_3 */
+    public var panel_06_3 = JPanel()
 
-/** label_info */
-public var label_info_06 = JLabel()
+    /** label_info */
+    public var label_info_06 = JLabel()
 
-/** desktoppane_12 */
-public var desktoppane_06_12 = JDesktopPane()
+    /** desktoppane_12 */
+    public var desktoppane_06_12 = JDesktopPane()
 
 //------------------------------
 
