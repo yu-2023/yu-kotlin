@@ -29,11 +29,11 @@ import java.awt.event.ActionListener
 
 //------------------------------
 
-/** frame */
-public var frame_05 = JFrame()
+    /** frame */
+    public var frame_05 = JFrame()
 
-/** manubar */
-public var menubar_05 = JMenuBar()
+    /** manubar */
+    public var menubar_05 = JMenuBar()
 
 //------------------------------
 
