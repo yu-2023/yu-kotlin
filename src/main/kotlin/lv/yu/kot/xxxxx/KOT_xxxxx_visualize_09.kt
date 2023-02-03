@@ -24,7 +24,7 @@ fun KOT_xxxxx_visualize_09() {
         	
         lv.yu.kot.xxxxx.xxxxx_11.KOT_xxxxx_11_09()
             	    		            
-	    lv.yu.kot.desktoppane_09_11.add(lv.yu.kot.xxxxx.xxxxx_11.JInternalFrame_xxxxx_09_11, BorderLayout.CENTER)
+        lv.yu.kot.desktoppane_09_11.add(lv.yu.kot.xxxxx.xxxxx_11.JInternalFrame_xxxxx_09_11, BorderLayout.CENTER)
 
 //--------------------------------------------------
             
@@ -32,11 +32,11 @@ fun KOT_xxxxx_visualize_09() {
         
         lv.yu.kot.xxxxx.xxxxx_12.KOT_xxxxx_12_09()
         
-	    lv.yu.kot.desktoppane_09_12.add(lv.yu.kot.xxxxx.xxxxx_12.JInternalFrame_xxxxx_09_12, BorderLayout.CENTER)
+        lv.yu.kot.desktoppane_09_12.add(lv.yu.kot.xxxxx.xxxxx_12.JInternalFrame_xxxxx_09_12, BorderLayout.CENTER)
     
 //--------------------------------------------------                
 
-	    lv.yu.kot.desktoppane_09_13.removeAll()
+        lv.yu.kot.desktoppane_09_13.removeAll()
         	
         lv.yu.kot.xxxxx.xxxxx_13.KOT_xxxxx_13_09()
             	    		            
@@ -44,19 +44,19 @@ fun KOT_xxxxx_visualize_09() {
 
 //--------------------------------------------------
         
-	    lv.yu.kot.desktoppane_09_21.removeAll()
+        lv.yu.kot.desktoppane_09_21.removeAll()
         	
         lv.yu.kot.xxxxx.xxxxx_21.KOT_xxxxx_21_09()
             	    		            
-	    lv.yu.kot.desktoppane_09_21.add(lv.yu.kot.xxxxx.xxxxx_21.JInternalFrame_xxxxx_09_21, BorderLayout.CENTER)
+        lv.yu.kot.desktoppane_09_21.add(lv.yu.kot.xxxxx.xxxxx_21.JInternalFrame_xxxxx_09_21, BorderLayout.CENTER)
 
 //--------------------------------------------------
         
-	    lv.yu.kot.desktoppane_09_22.removeAll()
+        lv.yu.kot.desktoppane_09_22.removeAll()
         
         lv.yu.kot.xxxxx.xxxxx_22.KOT_xxxxx_22_09()
         
-	    lv.yu.kot.desktoppane_09_22.add(lv.yu.kot.xxxxx.xxxxx_22.JInternalFrame_xxxxx_09_22, BorderLayout.CENTER)
+        lv.yu.kot.desktoppane_09_22.add(lv.yu.kot.xxxxx.xxxxx_22.JInternalFrame_xxxxx_09_22, BorderLayout.CENTER)
     
 //--------------------------------------------------	                
 
