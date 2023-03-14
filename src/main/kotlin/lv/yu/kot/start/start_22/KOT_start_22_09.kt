@@ -22,7 +22,7 @@ import javax.swing.JInternalFrame
            
 fun KOT_start_22_09() { 
                           
-        JTabbedPane_start_08_22 = JTabbedPane()
+        JTabbedPane_start_09_22 = JTabbedPane()
     	JTabbedPane_start_09_22.removeAll()
 
         JTabbedPane_start_09_22.setTabPlacement(SwingConstants.BOTTOM)
