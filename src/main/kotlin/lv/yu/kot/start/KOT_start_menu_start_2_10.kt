@@ -3,7 +3,7 @@
  * 
  * Kotlin package     lv.yu.kot.start
  * 
- * Kotlin program     KOT_start_menu_start_2_08.kt     Apache License 2.0
+ * Kotlin program     KOT_start_menu_start_2_10.kt     Apache License 2.0
  *      
  * Copyright (c)      Yuri Utkin 2023                  mob.+371 12345678     https://www.jago.lv
  * 
