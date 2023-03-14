@@ -22,7 +22,7 @@ import javax.swing.JInternalFrame
            
 fun KOT_start_22_10() { 
                       
-        JTabbedPane_start_08_22 = JTabbedPane()
+        JTabbedPane_start_10_22 = JTabbedPane()
     	JTabbedPane_start_10_22.removeAll()
     	
         KOT_start_22_about_10()
